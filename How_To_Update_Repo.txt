@@ -1,0 +1,55 @@
+### 1. Create a Branch
+Create a new branch in the repository from the main branch.
+
+
+# Clone the repository if you haven't already
+git clone <repository_url>
+cd <repository_directory>
+
+# Pull the latest changes from the main branch
+git checkout main
+git pull origin main
+
+# Create a new branch
+git checkout -b <new_branch_name>
+
+
+### 2. Modify the Environment
+Make the necessary changes in your environment (add, modify, or delete files as needed). 
+
+- If you delete files in your local environment, Git will track these deletions.
+- If you add or modify files, those changes will also be tracked.
+
+
+
+### 3. Stage and Commit the Changes
+After making changes, stage and commit them.
+
+
+# Check the status of changes
+git status
+
+# Stage the changes (including deletions)
+git add -A
+
+# Commit the changes
+git commit -m "Describe your changes, including deletions"
+
+
+
+### 4. Push the Branch
+Push your new branch to the remote repository.
+
+git push origin <new_branch_name>
+
+
+
+### 5. Create a Pull Request
+Go to the repository's hosting platform (e.g., GitHub, GitLab) and create a pull request to merge `<new_branch_name>` into `main`.
+
+
+### 6. Merge and Reflect Changes
+Once the pull request is approved and merged:
+- Your changes (including deletions) will reflect in the `main` branch.
+- Other collaborators will see the updated content when they pull from `main`.
+
